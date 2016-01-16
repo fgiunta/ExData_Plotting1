@@ -14,6 +14,9 @@ dev.copy(png,"plot1.png")
 dev.off()
 
 ## plot 2
+## Note that the plot should have been called with type="l" to get
+## the line plot in one shot.  Read the help, next time... :)
+
 plot(dt,data$Global_active_power,type="n",xlab="",ylab="Global Active Power (kilowatts)")
 lines(dt,data$Global_active_power)
 dev.copy(png,"plot2.png")
